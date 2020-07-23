@@ -405,7 +405,7 @@
 							</execution>
 						</executions>
 						<configuration>
-							<imageName>nimbleplatform/${project.artifactId}</imageName>
+							<imageName>nimbleplatform/epcis-server</imageName>
 							<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
 							<!--  certPath>${project.basedir}/src/main/resources</certPath-->
 							<includeSystemScope>true</includeSystemScope>
