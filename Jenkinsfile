@@ -20,7 +20,7 @@ node('nimble-jenkins-slave') {
         }
 
         stage('Deploy') {
-            sh 'ssh staging "cd /srv/nimble-staging/ && ./run-staging.sh restart-single epcis-server"'
+            sh 'ssh staging "cd /srv/nimble-staging/ && ./run-staging.sh restart-single epcis-service"'
         }
     } else {
         stage('Build Docker') {
