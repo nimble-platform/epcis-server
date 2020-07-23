@@ -1,1 +1,12 @@
-/target/
+# ------------------------------------------------------
+# directories excluded from version control
+# ------------------------------------------------------
+.idea/
+identity-service/target/
+
+# ------------------------------------------------------
+# fiels excluded from version control
+# ------------------------------------------------------
+*.versionsBackup
+*.class
+*.iml
