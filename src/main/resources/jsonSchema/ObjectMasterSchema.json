@@ -1,0 +1,11 @@
+{
+  "$schema": "http://oliot.org/obejctmaster/schema#",
+  "id": "http://oliot.org/obejctmaster",
+  "type": "object",
+  "properties": {
+    "id": {},
+    "type": {},
+    "attributes": {}
+  },
+  "required": ["id", "type","attributes"]
+}

@@ -1,0 +1,9 @@
+spring:
+  profiles: 
+    active: productive
+  application:
+    # the name of the application represents the global identifier of this microservice.
+    name: epcis-service
+
+
+

@@ -1,0 +1,93 @@
+{
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "productClass": {
+      "$id": "/properties/productClass",
+      "type": "string",
+      "title": "The Productclass Schema ",
+      "default": "",
+      "examples": [
+        "lindbacks_test"
+      ]
+    },
+    "productionProcessTemplate": {
+      "$id": "/properties/productionProcessTemplate",
+      "type": "array",
+      "items": {
+        "$id": "/properties/productionProcessTemplate/items",
+        "type": "object",
+        "properties": {
+          "id": {
+            "$id": "/properties/productionProcessTemplate/items/properties/id",
+            "type": "string",
+            "title": "The Id Schema ",
+            "default": "",
+            "examples": [
+              "1"
+            ]
+          },
+          "hasPrev": {
+            "$id": "/properties/productionProcessTemplate/items/properties/hasPrev",
+            "type": "string",
+            "title": "The Hasprev Schema ",
+            "default": "",
+            "examples": [
+              ""
+            ]
+          },
+          "readPoint": {
+            "$id": "/properties/productionProcessTemplate/items/properties/readPoint",
+            "type": "string",
+            "title": "The Readpoint Schema ",
+            "default": "",
+            "examples": [
+              "urn:epc:id:sgln:readPoint.lindbacks.1"
+            ]
+          },
+          "bizLocation": {
+            "$id": "/properties/productionProcessTemplate/items/properties/bizLocation",
+            "type": "string",
+            "title": "The Bizlocation Schema ",
+            "default": "",
+            "examples": [
+              "urn:epc:id:sgln:bizLocation.lindbacks.2"
+            ]
+          },
+          "bizStep": {
+            "$id": "/properties/productionProcessTemplate/items/properties/bizStep",
+            "type": "string",
+            "title": "The Bizstep Schema ",
+            "default": "",
+            "examples": [
+              "urn:epcglobal:cbv:bizstep:other"
+            ]
+          },
+          "hasNext": {
+            "$id": "/properties/productionProcessTemplate/items/properties/hasNext",
+            "type": "string",
+            "title": "The Hasnext Schema ",
+            "default": "",
+            "examples": [
+              "2"
+            ]
+          }
+        },
+		"required": [
+			"id",
+			"hasPrev",
+			"readPoint",
+			"bizLocation",
+			"bizStep",
+			"hasNext"
+		  ]
+      }
+    }
+  },
+	"required": [
+    "productClass",
+    "productionProcessTemplate"
+	]
+}
