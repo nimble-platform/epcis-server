@@ -12,11 +12,15 @@ import org.springframework.cache.annotation.EnableCaching;
 //import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 //import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 //import org.springframework.cloud.netflix.feign.EnableFeignClients;
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
 * Created by Quan Deng, 2019
@@ -26,11 +30,11 @@ import org.springframework.web.client.RestTemplate;
 
 @EnableCaching
 @Configuration
-//@EnableCircuitBreaker
-//@EnableEurekaClient
-//@EnableFeignClients
+@EnableCircuitBreaker
+@EnableEurekaClient
+@EnableFeignClients
 @RestController
-//@EnableSwagger2
+@EnableSwagger2
 @SpringBootApplication
 @EnableAutoConfiguration(exclude={MongoAutoConfiguration.class})
 //@ServletComponentScan
