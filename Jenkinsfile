@@ -22,15 +22,5 @@ node('nimble-jenkins-slave') {
         stage('Deploy') {
             sh 'ssh staging "cd /srv/nimble-staging/ && ./run-staging.sh restart-single epcis-service"'
         }
-    } else {
-        stage('Build Docker') {
-            sh 'mvn docker:build -P docker'
-        }
-    }
-
-    if (env.BRANCH_NAME == 'master') {
-        stage('Deploy') {
-            sh 'ssh nimble "cd /data/deployment_setup/prod/ && sudo ./run-prod.sh restart-single epcis-server"'
-        }
     }
 }
